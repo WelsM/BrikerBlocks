@@ -14,22 +14,10 @@ public class MenuController : MonoBehaviour
         Op.SetActive(false);
     }
     public void PlayGame(){
-     Debug.Log("PlayGame!");   
+        SceneManager.LoadScene("Fase");
     }
 
     public void QuiGame(){
-     Debug.Log("Quit!");   
-    }
-    
-    public void PlayCredits(){
-     Debug.Log("Credits!");
-    }
-
-    public void Options(){
-     Debug.Log("Options!");  
-    }
-
-    public void ReturnMenu(){
-     Debug.Log("ReturnMenu!");  
+     Application.Quit(); 
     }
 }
